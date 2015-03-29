@@ -53,6 +53,8 @@
      <Compile Include="Assets\Scripts\CheckWhereWeAre.cs" />
      <Compile Include="Assets\Scripts\CrossPlatformInputInitialize.cs" />
      <Compile Include="Assets\Scripts\DestroyerScript.cs" />
+     <Compile Include="Assets\Scripts\HUDScript.cs" />
+     <Compile Include="Assets\Scripts\PassByPuppy.cs" />
      <Compile Include="Assets\Scripts\Platformer2DUserControl.cs" />
      <Compile Include="Assets\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Scripts\SpawnScript.cs" />
