@@ -4,7 +4,7 @@ using System.Collections;
 public class HUDScript : MonoBehaviour {
 
 	private float playerScore = 0;
-	public static float timer = 10;
+	public static float timer = 120;
 
 	public void ChangeScore(int amount) {
 		playerScore += amount;
