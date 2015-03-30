@@ -12,16 +12,14 @@ public class GameControllerScript : MonoBehaviour {
 	public int items;
 	
 	void Start() {
-		//int TimeRemaining = TimerObject.timeRemaining;
-		//The timer, as a child of this gameobject, receive this and start the countdown using the timeRemaining variable
-		//BroadcastMessage("Start Timer", TimeRemaining);
+	
 	}
 	
 	void Update() {
 		
 		if (timeElapsed)
 		{
-			//You lose!
+
 		}
 	}
 	

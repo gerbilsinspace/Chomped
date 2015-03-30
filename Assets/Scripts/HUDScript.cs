@@ -13,8 +13,10 @@ public class HUDScript : MonoBehaviour {
 
 	void Update() {
 		timer -= Time.deltaTime;
+
 		if (timer <= 0) {
 			timer = 0;
+			PlayerPrefs.SetFloat("Player Score", playerScore);
 			Application.LoadLevel(3);
 		} 
 	}

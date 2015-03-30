@@ -2,9 +2,8 @@
 using System.Collections;
 
 public class InstantlySwitchScene : MonoBehaviour {
-	
-	// Update is called once per frame
-	void Update () {
-		Application.LoadLevel(2);
+	public int LevelToLoad = 2;
+	public void LoadLevel() {
+		Application.LoadLevel(LevelToLoad);
 	}
 }
