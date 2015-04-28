@@ -1,6 +1,5 @@
 # Chomped
 
-Credit : Joe is the Pro
-Joe, Shantanu
+Source code for my first video game, Chomped! Chomped! is about petting as many puppies as you can. 
 
-Thanks for playing the game and wasting your time
+Chomped! is an infinite runner, which uses the space bar to jump. It is a Unity game. 
