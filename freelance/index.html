@@ -1,0 +1,36 @@
+<html ng-app="freelanceApp">
+	<head>
+		<title>Freelance App</title>
+	</head>
+	<body ng-controller="TabCtrl">
+		<header>
+			<nav class="nav">
+				<ul>
+					<li ng-repeat="tabItem in tabs">
+						<a ng-click="setTab('{{tabItem.title}}')" href>{{tabItem.capitalized}}</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<article>
+
+			<div ng-show="tab == 'finance'">
+				<h1>Finance</h1>
+			</div>
+			<div ng-show="tab == 'contacts'">
+				<h1>Contacts</h1>
+			</div>
+			<div ng-show="tab == 'timesheet'">
+				<h1>Timesheet</h1>
+			</div>
+			<div ng-show="tab == 'jobs'">
+				<h1>Job Manager</h1>
+			</div>
+		</article>		
+	</div>
+
+	<script type="text/javascript" src="lib/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="lib/angular/angular-route.min.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
+</html>

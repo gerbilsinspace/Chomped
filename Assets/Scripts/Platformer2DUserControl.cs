@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets._2D
 {
@@ -26,7 +25,7 @@ namespace UnityStandardAssets._2D
             if (!m_Jump)
             {
                 // Read the jump input in Update so button presses aren't missed.
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+				m_Jump = Input.GetKeyDown("space");
             }
         }
 
@@ -34,7 +33,7 @@ namespace UnityStandardAssets._2D
         private void FixedUpdate()
         {
             // Read the inputs.
-            bool crouch = Input.GetKey(KeyCode.LeftControl);
+            //bool crouch = Input.GetKey(KeyCode.LeftControl);
 			float runningSpeed = m_Rigidbody2D.velocity.x;
 
 			if (runningSpeed + runningSpeedIncrement < m_Character.m_MaxSpeed) {
@@ -44,7 +43,7 @@ namespace UnityStandardAssets._2D
 			}
 
             // Pass all parameters to the character control script.
-            m_Character.Move(runningSpeed, crouch, m_Jump);
+            m_Character.Move(runningSpeed, m_Jump);
             m_Jump = false;
         }
     }

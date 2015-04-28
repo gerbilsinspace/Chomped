@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class RotateDeveloperLogo : MonoBehaviour {
+	public int time = 100;
 	private float newTime = 0;
 	// Use this for initialization
 	void Start () {
@@ -10,6 +11,6 @@ public class RotateDeveloperLogo : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate (Vector3.forward * newTime / 100); 
+		transform.Rotate (Vector3.forward * newTime / time); 
 	}
 }
